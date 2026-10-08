@@ -4,7 +4,7 @@ Single-file static landing page for **Gutter Genie** (gutter cleaning & repair, 
 
 - Pricing matches the real ProQuote rate card: $1.75/ft (min $175), $15/downspout flush, $8.50/ft guard install
 - CTAs: call, SMS (after-hours), email
-- Contact: 204-972-0325 · guttergeinie@gmail.com
+- Contact: 204-972-0325 · guttergeniewpg@gmail.com
 - No build step, no dependencies — just `index.html` + `og.png`
 
 ## Deploy
