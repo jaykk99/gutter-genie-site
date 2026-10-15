@@ -1,5 +1,8 @@
 # Gutter Genie — customer landing page
 
+Live: **https://guttergenie.pages.dev**
+Backup: https://gutter-genie.vercel.app (paused)
+
 Single-file static landing page for **Gutter Genie** (gutter cleaning & repair, Winnipeg MB).
 
 - Pricing matches the real ProQuote rate card: $1.75/ft (min $175), $15/downspout flush, $8.50/ft guard install
