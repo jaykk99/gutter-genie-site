@@ -1,7 +1,7 @@
 # Gutter Genie — customer landing page
 
 Live: **https://guttergenie.pages.dev**
-Backup: https://gutter-genie.vercel.app (paused)
+Live URL: https://guttergenie.pages.dev
 
 Single-file static landing page for **Gutter Genie** (gutter cleaning & repair, Winnipeg MB).
 
