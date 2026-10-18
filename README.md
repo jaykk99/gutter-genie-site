@@ -1,7 +1,6 @@
 # Gutter Genie — customer landing page
 
 Live: **https://guttergenie.pages.dev**
-Live URL: https://guttergenie.pages.dev
 
 Single-file static landing page for **Gutter Genie** (gutter cleaning & repair, Winnipeg MB).
 
