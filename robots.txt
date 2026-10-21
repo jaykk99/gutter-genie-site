@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://jaykk99.github.io/gutter-genie-site/sitemap.xml

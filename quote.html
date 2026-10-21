@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Get a Quote - Gutter Genie Winnipeg</title>
+<meta name="description" content="Request a free gutter inspection and quote in Winnipeg, Steinbach or Grunthal. Fill in the form and your email app sends it straight to Gutter Genie. Call or text 204-972-0325.">
+<link rel="canonical" href="https://jaykk99.github.io/gutter-genie-site/quote.html">
+<meta property="og:title" content="Get a Quote - Gutter Genie">
+<meta property="og:description" content="Free gutter inspections in Winnipeg and area. Request your quote online or call 204-972-0325.">
+<meta property="og:image" content="https://jaykk99.github.io/gutter-genie-site/og.png">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🧞</text></svg>">
+<link rel="stylesheet" href="styles.css">
+<script src="quote.js" defer></script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+<header class="site-header">
+  <div class="wrap">
+    <a class="logo" href="index.html" aria-label="Gutter Genie home">🧞 Gutter <span>Genie</span></a>
+    <nav class="main-nav" aria-label="Main navigation">
+      <a href="index.html">Home</a>
+      <a href="services/cleaning.html">Services</a>
+      <a href="estimate.html">Estimate</a>
+      <a href="faq.html">FAQ</a>
+      <a href="quote.html" aria-current="page">Get a Quote</a>
+    </nav>
+    <a class="header-cta" href="tel:+12049720325">Call 204-972-0325</a>
+  </div>
+</header>
+
+<main id="main" class="wrap">
+<p class="breadcrumb"><a href="index.html">Home</a> → Get a Quote</p>
+<section class="block">
+  <div class="quote-form">
+    <h2>Request a free quote</h2>
+    <p class="sub" style="text-align:left">Fill this in and your own email app will send the request to us. On-site visits are weekdays at 12:30.</p>
+    <form id="quote-form" novalidate>
+      <div class="field">
+        <label for="q-name">Name</label>
+        <input type="text" id="q-name" name="name" autocomplete="name" required>
+      </div>
+      <div class="field">
+        <label for="q-phone">Phone</label>
+        <input type="tel" id="q-phone" name="phone" autocomplete="tel" placeholder="204-555-0123" required>
+      </div>
+      <div class="field">
+        <label for="q-email">Email <span class="hint">(optional)</span></label>
+        <input type="email" id="q-email" name="email" autocomplete="email" placeholder="you@example.com">
+      </div>
+      <div class="field">
+        <label for="q-address">Property address</label>
+        <input type="text" id="q-address" name="address" autocomplete="street-address" placeholder="123 Main St, Winnipeg" required>
+      </div>
+      <fieldset class="field" style="border:none;padding:0">
+        <legend style="font-weight:600;margin-bottom:6px">What do you need?</legend>
+        <div class="check-group">
+          <label><input type="checkbox" name="services" value="cleaning"> Gutter cleaning</label>
+          <label><input type="checkbox" name="services" value="downspouts"> Downspout clearing / flush</label>
+          <label><input type="checkbox" name="services" value="guards"> Guard installation</label>
+          <label><input type="checkbox" name="services" value="repairs"> Hanger / clip repair</label>
+          <label><input type="checkbox" name="services" value="replacement"> Gutter replacement</label>
+          <label><input type="checkbox" name="services" value="inspection"> Free inspection</label>
+        </div>
+      </fieldset>
+      <div class="field">
+        <label for="q-details">Anything we should know <span class="hint">(stories, access issues, problem spots)</span></label>
+        <textarea id="q-details" name="details" placeholder="e.g. Two-story home, north side overflows every rain"></textarea>
+      </div>
+      <button type="submit" class="cta">Send quote request</button>
+      <p class="calc-error" id="quote-error" role="alert"></p>
+      <p class="form-note">Submitting opens your email app addressed to guttergeniewpg@gmail.com. Nothing is sent until you hit send in your email app. Prefer to talk? Call or text <a href="tel:+12049720325">204-972-0325</a>.</p>
+    </form>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>© 2026 Gutter Genie · Winnipeg, MB · 204-972-0325</span>
+    <nav aria-label="Footer navigation">
+      <a href="index.html">Home</a>
+      <a href="estimate.html">Estimate</a>
+      <a href="faq.html">FAQ</a>
+      <a href="quote.html">Get a Quote</a>
+      <a href="sitemap.xml">Sitemap</a>
+    </nav>
+  </div>
+</footer>
+</body>
+</html>

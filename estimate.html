@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Instant Estimate - Gutter Genie Winnipeg</title>
+<meta name="description" content="Get an instant ballpark estimate for gutter cleaning, downspout flushes and guard installation in Winnipeg. Rates: $1.75/ft cleaning, $15 per flush, $8.50/ft guards.">
+<link rel="canonical" href="https://jaykk99.github.io/gutter-genie-site/estimate.html">
+<meta property="og:title" content="Instant Estimate - Gutter Genie">
+<meta property="og:description" content="Ballpark your gutter job in seconds: $1.75/ft cleaning, $15 per downspout flush, $8.50/ft guards.">
+<meta property="og:image" content="https://jaykk99.github.io/gutter-genie-site/og.png">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🧞</text></svg>">
+<link rel="stylesheet" href="styles.css">
+<script src="estimate.js" defer></script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+<header class="site-header">
+  <div class="wrap">
+    <a class="logo" href="index.html" aria-label="Gutter Genie home">🧞 Gutter <span>Genie</span></a>
+    <nav class="main-nav" aria-label="Main navigation">
+      <a href="index.html">Home</a>
+      <a href="services/cleaning.html">Services</a>
+      <a href="estimate.html" aria-current="page">Estimate</a>
+      <a href="faq.html">FAQ</a>
+      <a href="quote.html">Get a Quote</a>
+    </nav>
+    <a class="header-cta" href="tel:+12049720325">Call 204-972-0325</a>
+  </div>
+</header>
+
+<main id="main" class="wrap">
+<p class="breadcrumb"><a href="index.html">Home</a> → Estimate</p>
+<section class="block">
+  <div class="calc">
+    <h2>Instant estimate</h2>
+    <p class="sub" style="text-align:left">Ballpark in seconds. The exact written quote comes at the free inspection.</p>
+    <form id="calc-form">
+      <div class="field">
+        <label for="calc-feet">Gutter length <span class="hint">(linear feet, best guess is fine)</span></label>
+        <input type="number" id="calc-feet" min="0" step="1" inputmode="numeric" placeholder="e.g. 120">
+      </div>
+      <fieldset class="field" style="border:none;padding:0">
+        <legend style="font-weight:600;margin-bottom:6px">Home height</legend>
+        <label style="font-weight:400"><input type="radio" name="stories" value="1" checked> 1 or 2 stories</label><br>
+        <label style="font-weight:400"><input type="radio" name="stories" value="3"> 3 stories <span class="hint">(per-foot rate +50%: $2.63/ft)</span></label>
+      </fieldset>
+      <div class="field">
+        <label for="calc-flushes">Downspouts to flush <span class="hint">($15 each)</span></label>
+        <input type="number" id="calc-flushes" min="0" step="1" inputmode="numeric" placeholder="e.g. 4">
+      </div>
+      <div class="field">
+        <label for="calc-guard-feet">Guard installation <span class="hint">(feet at $8.50/ft, 0 if none)</span></label>
+        <input type="number" id="calc-guard-feet" min="0" step="1" inputmode="numeric" placeholder="e.g. 0">
+      </div>
+      <div class="field">
+        <label for="calc-area">Service area</label>
+        <select id="calc-area">
+          <option value="winnipeg">Winnipeg (no travel fee)</option>
+          <option value="steinbach">Steinbach (+$45 travel)</option>
+          <option value="grunthal">Grunthal (+$55 travel)</option>
+          <option value="other">Selkirk / Stonewall / other (ask)</option>
+        </select>
+      </div>
+      <button type="submit" class="cta" id="calc-button">Calculate estimate</button>
+      <p class="calc-error" id="calc-error" role="alert"></p>
+      <div class="calc-result" id="calc-result" aria-live="polite"></div>
+    </form>
+  </div>
+
+  <div class="prose" style="margin-top:40px">
+    <h2>How the math works</h2>
+    <p>The estimate above uses the same rate card as our written quotes:</p>
+    <div class="table-wrap">
+    <table class="rates">
+      <thead><tr><th>Service</th><th>Rate</th></tr></thead>
+      <tbody>
+        <tr><td>Gutter cleaning</td><td>$1.75 per foot</td></tr>
+        <tr><td>Minimum charge</td><td>$100</td></tr>
+        <tr><td>3-story cleaning (per-foot rate)</td><td>$2.63 per foot</td></tr>
+        <tr><td>Downspout flush</td><td>$15 each</td></tr>
+        <tr><td>Guard installation</td><td>$8.50 per foot</td></tr>
+        <tr><td>Travel: Steinbach</td><td>$45</td></tr>
+        <tr><td>Travel: Grunthal</td><td>$55</td></tr>
+        <tr><td>Deposit to book</td><td>30%</td></tr>
+      </tbody>
+    </table>
+    </div>
+    <p>No tax. Cleaning is billed at $1.75/ft with a $100 minimum, so small jobs pay the base and larger homes pay per foot. Three-story homes cost more on the per-foot rate because of the extra reach and setup, which works out to $2.63/ft.</p>
+    <p><a href="quote.html">Ready? Request your free inspection →</a></p>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>© 2026 Gutter Genie · Winnipeg, MB · 204-972-0325</span>
+    <nav aria-label="Footer navigation">
+      <a href="index.html">Home</a>
+      <a href="estimate.html">Estimate</a>
+      <a href="faq.html">FAQ</a>
+      <a href="quote.html">Get a Quote</a>
+      <a href="sitemap.xml">Sitemap</a>
+    </nav>
+  </div>
+</footer>
+</body>
+</html>
