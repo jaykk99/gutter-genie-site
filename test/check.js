@@ -107,6 +107,7 @@ try {
   check('estimator: empty inputs = $0.00', run('', '1', 'light', '', '', 'Winnipeg') === '$0.00');
   check('estimator: deposit terms shown', /30% deposit/.test(doc._els.estTerms.textContent), doc._els.estTerms.textContent);
   check('estimator: SMS link prefilled', doc._els.estSms.href.startsWith('sms:+12049720325?body='), doc._els.estSms.href.slice(0, 60));
+check('estimator: copy button present', html.includes('id="estCopy"') && script.includes('clipboard'));
 } catch (e) {
   bad('estimator executes', String(e).slice(0, 160));
 }

@@ -160,7 +160,7 @@ footer{border-top:1px solid var(--border);padding:24px 0;text-align:center;color
     <div id="estLines"></div>
     <div class="est-total"><span>Estimated total</span><b id="estTotal">$0.00</b></div>
     <p class="fine" id="estTerms"></p>
-    <div class="cta-row"><a class="cta" id="estSms" href="sms:+12049720325">Text me this estimate</a></div>
+    <div class="cta-row"><a class="cta" id="estSms" href="sms:+12049720325">Text me this estimate</a><button class="cta ghost" id="estCopy" type="button">Copy estimate</button></div>
   </div>
 </section>
 
@@ -258,6 +258,30 @@ footer{border-top:1px solid var(--border);padding:24px 0;text-align:center;color
     document.getElementById(id).addEventListener('change', estimate);
   });
   estimate();
+
+  // Copy the plain-text estimate to the clipboard for pasting anywhere.
+  document.getElementById('estCopy').addEventListener('click', function(){
+    var lines = [];
+    document.querySelectorAll('#estLines .est-line').forEach(function(row){
+      var cells = row.querySelectorAll('span');
+      if(cells.length === 2 && cells[0].textContent) lines.push(cells[0].textContent + ' ' + cells[1].textContent);
+    });
+    var text = 'GUTTER GENIE - ESTIMATE\n' + lines.join('\n') + '\nEstimated total: ' +
+      document.getElementById('estTotal').textContent + '\n' +
+      document.getElementById('estTerms').textContent +
+      '\nCall or text 204-972-0325 to book.';
+    var done = function(){ var b = document.getElementById('estCopy'); b.textContent = 'Copied'; setTimeout(function(){ b.textContent = 'Copy estimate'; }, 1500); };
+    if(navigator.clipboard && navigator.clipboard.writeText){
+      navigator.clipboard.writeText(text).then(done, function(){ fallbackCopy(text); done(); });
+    } else { fallbackCopy(text); done(); }
+  });
+  function fallbackCopy(text){
+    var ta = document.createElement('textarea');
+    ta.value = text; ta.style.position = 'fixed'; ta.style.opacity = '0';
+    document.body.appendChild(ta); ta.select();
+    try{ document.execCommand('copy'); }catch(e){}
+    document.body.removeChild(ta);
+  }
 
   // FAQ accordion
   document.querySelectorAll('.qa .q').forEach(function(btn){
