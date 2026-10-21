@@ -5,6 +5,20 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Gutter Genie: Gutter Cleaning & Repair in Winnipeg</title>
 <meta name="description" content="Gutter Genie: professional gutter cleaning, downspout clearing, guard installation and repairs in Winnipeg and surrounding areas. Free inspections. Call or text 204-972-0325.">
+<meta name="theme-color" content="#0b1510">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"LocalBusiness","name":"Gutter Genie","description":"Gutter cleaning, downspout clearing, guard installation and repairs in Winnipeg and surrounding areas.","telephone":"+1-204-972-0325","email":"guttergeniewpg@gmail.com","address":{"@type":"PostalAddress","addressLocality":"Winnipeg","addressRegion":"MB","addressCountry":"CA"},"areaServed":["Winnipeg","Steinbach","Grunthal","Selkirk","Stonewall"],"priceRange":"$100+","url":"https://jaykk99.github.io/gutter-genie-site/"}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[
+{"@type":"Question","name":"How much does gutter cleaning cost?","acceptedAnswer":{"@type":"Answer","text":"Gutter cleaning is $1.75 per linear foot with a $100 base fee. Every job gets an exact written quote before work starts."}},
+{"@type":"Question","name":"Do you charge tax?","acceptedAnswer":{"@type":"Answer","text":"No. Gutter Genie does not charge tax."}},
+{"@type":"Question","name":"What deposit do you require?","acceptedAnswer":{"@type":"Answer","text":"A 30% deposit books the job, with the balance due on completion."}},
+{"@type":"Question","name":"Do you offer free inspections?","acceptedAnswer":{"@type":"Answer","text":"Yes. Free inspections are available on weekdays at 12:30 PM."}},
+{"@type":"Question","name":"Which areas do you serve?","acceptedAnswer":{"@type":"Answer","text":"Winnipeg and surrounding communities including Steinbach, Grunthal, Selkirk and Stonewall. A small travel fee applies outside Winnipeg: $45 for Steinbach, $55 for Grunthal."}},
+{"@type":"Question","name":"How do I book?","acceptedAnswer":{"@type":"Answer","text":"Call or text 204-972-0325, or email guttergeniewpg@gmail.com."}}
+]}
+</script>
 <meta property="og:type" content="website">
 <meta property="og:title" content="Gutter Genie: Gutter Cleaning & Repair in Winnipeg">
 <meta property="og:description" content="Professional gutter cleaning, downspout clearing, guard installation and repairs. Free inspections. Call or text 204-972-0325.">
@@ -32,7 +46,38 @@ header{padding:20px 0;display:flex;justify-content:space-between;align-items:cen
 .cta.ghost{background:transparent;border:2px solid var(--green);color:var(--green)}
 .badges{display:flex;gap:20px;justify-content:center;flex-wrap:wrap;margin-top:36px;color:var(--muted);font-size:.95rem}
 .services{padding:50px 0}
-.services h2,.pricing h2,.areas h2,.contact h2{text-align:center;font-size:2rem;margin-bottom:8px}
+.services h2,.pricing h2,.areas h2,.contact h2,.estimate h2,.how h2,.faq h2{text-align:center;font-size:2rem;margin-bottom:8px}
+.skip{position:absolute;left:-999px;top:0;background:var(--green);color:#06210f;font-weight:700;padding:10px 16px;border-radius:0 0 10px 0;z-index:100}
+.skip:focus{left:0}
+a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible{outline:2px solid var(--green);outline-offset:2px}
+.estimate{padding:50px 0}
+.est-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:12px;max-width:720px;margin:0 auto 20px}
+.field{display:flex;flex-direction:column;gap:6px;text-align:left}
+.field label{font-size:.85rem;color:var(--muted)}
+.field input,.field select{background:var(--panel);border:1px solid var(--border);color:var(--text);border-radius:10px;padding:12px;font-size:1rem;min-height:48px}
+.est-out{max-width:560px;margin:0 auto;background:var(--panel);border:1px solid var(--border);border-radius:14px;padding:22px}
+.est-line{display:flex;justify-content:space-between;padding:8px 0;border-bottom:1px dashed var(--border);font-size:.95rem}
+.est-line span:last-child{color:var(--muted)}
+.est-total{display:flex;justify-content:space-between;align-items:center;padding:14px 0 4px;font-size:1.25rem}
+.est-total b{color:var(--green);font-size:1.6rem}
+.how{padding:50px 0}
+.faq{padding:50px 0;max-width:720px}
+.qa{border:1px solid var(--border);border-radius:12px;margin-bottom:10px;background:var(--panel);overflow:hidden}
+.qa .q{width:100%;text-align:left;background:none;border:none;color:var(--text);font-size:1rem;font-weight:600;padding:16px;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:10px}
+.qa .q::after{content:'+';color:var(--green);font-size:1.3rem;flex:0 0 auto}
+.qa .q[aria-expanded="true"]::after{content:'-'}
+.qa .a{max-height:0;overflow:hidden;transition:max-height .25s ease;color:var(--muted);font-size:.95rem}
+.qa .a p{padding:0 16px 16px}
+.services,.pricing,.areas,.how,.faq,.estimate{content-visibility:auto;contain-intrinsic-size:auto 400px}
+#stickyBar{display:none}
+@media(max-width:600px){
+  #stickyBar{display:flex;position:fixed;left:0;right:0;bottom:0;z-index:50;background:rgba(16,36,26,.97);border-top:1px solid var(--border);padding:10px 12px calc(10px + env(safe-area-inset-bottom));gap:10px}
+  #stickyBar a{flex:1;text-align:center;background:var(--green);color:#06210f;font-weight:700;padding:14px;border-radius:10px;text-decoration:none;font-size:16px}
+  #stickyBar a.ghost{background:transparent;border:2px solid var(--green);color:var(--green)}
+  body{padding-bottom:76px}
+  .est-grid{grid-template-columns:1fr 1fr}
+}
+@media(prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
 .sub{text-align:center;color:var(--muted);margin-bottom:32px}
 .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px}
 .card{background:var(--panel);border:1px solid var(--border);border-radius:14px;padding:26px}
@@ -53,10 +98,12 @@ footer{border-top:1px solid var(--border);padding:24px 0;text-align:center;color
 </style>
 </head>
 <body>
+<a class="skip" href="#estimate">Skip to instant estimate</a>
 <header class="wrap">
   <div class="logo">🧞 Gutter <span>Genie</span></div>
   <a class="call-btn" href="tel:+12049720325">Call 204-972-0325</a>
 </header>
+<main>
 
 <section class="hero wrap">
   <h1>Your gutters, <em>handled.</em></h1>
@@ -98,6 +145,45 @@ footer{border-top:1px solid var(--border);padding:24px 0;text-align:center;color
   </div>
 </section>
 
+<section class="estimate wrap" id="estimate">
+  <h2>Instant estimate</h2>
+  <p class="sub">Ballpark price using our real rate card. Every job still gets an exact written quote before work starts.</p>
+  <form id="estForm" class="est-grid" onsubmit="return false;" aria-label="Instant quote estimator">
+    <div class="field"><label for="estFeet">Gutter length (ft)</label><input id="estFeet" type="number" min="0" max="10000" value="120" inputmode="numeric"></div>
+    <div class="field"><label for="estStoreys">Storeys</label><select id="estStoreys"><option value="1">1 storey</option><option value="2">2 storeys (1.5x)</option><option value="3">3 storeys (2.1x)</option></select></div>
+    <div class="field"><label for="estCond">Debris level</label><select id="estCond"><option value="light">Light (1x)</option><option value="moderate">Moderate (1.3x)</option><option value="heavy">Heavy (1.65x)</option></select></div>
+    <div class="field"><label for="estDs">Downspouts to flush</label><input id="estDs" type="number" min="0" max="50" value="4" inputmode="numeric"></div>
+    <div class="field"><label for="estGuards">Guard install (ft, 0 for none)</label><input id="estGuards" type="number" min="0" max="10000" value="0" inputmode="numeric"></div>
+    <div class="field"><label for="estZone">Area</label><select id="estZone"><option value="Winnipeg">Winnipeg</option><option value="Steinbach">Steinbach (+$45 travel)</option><option value="Grunthal">Grunthal (+$55 travel)</option><option value="Other">Somewhere else</option></select></div>
+  </form>
+  <div class="est-out" aria-live="polite" aria-label="Estimate result">
+    <div id="estLines"></div>
+    <div class="est-total"><span>Estimated total</span><b id="estTotal">$0.00</b></div>
+    <p class="fine" id="estTerms"></p>
+    <div class="cta-row"><a class="cta" id="estSms" href="sms:+12049720325">Text me this estimate</a></div>
+  </div>
+</section>
+
+<section class="how wrap">
+  <h2>How it works</h2>
+  <p class="sub">Three steps, no surprises.</p>
+  <div class="grid">
+    <div class="card"><h3>1. Free inspection</h3><p>We come out on a weekday at 12:30, look at the gutters, and measure everything.</p></div>
+    <div class="card"><h3>2. Written quote</h3><p>Exact price in our written quote format before any work starts. A 30% deposit books the job.</p></div>
+    <div class="card"><h3>3. Done and flowing</h3><p>We clean, flush, repair, and haul the debris away. Balance is due on completion. No tax.</p></div>
+  </div>
+</section>
+
+<section class="faq wrap" aria-label="Frequently asked questions">
+  <h2>Common questions</h2>
+  <div class="qa"><button class="q" aria-expanded="false">How much does gutter cleaning cost?</button><div class="a"><p>Gutter cleaning is $1.75 per linear foot with a $100 base fee. Guard installation is $8.50/ft and a downspout flush is $15 each. Every job gets an exact written quote before work starts.</p></div></div>
+  <div class="qa"><button class="q" aria-expanded="false">Do you charge tax?</button><div class="a"><p>No. Gutter Genie does not charge tax.</p></div></div>
+  <div class="qa"><button class="q" aria-expanded="false">What deposit do you require?</button><div class="a"><p>A 30% deposit books the job, with the balance due on completion.</p></div></div>
+  <div class="qa"><button class="q" aria-expanded="false">Do you offer free inspections?</button><div class="a"><p>Yes. Free inspections are available on weekdays at 12:30 PM.</p></div></div>
+  <div class="qa"><button class="q" aria-expanded="false">Which areas do you serve?</button><div class="a"><p>Winnipeg and surrounding communities including Steinbach, Grunthal, Selkirk and Stonewall. A small travel fee applies outside Winnipeg: $45 for Steinbach, $55 for Grunthal.</p></div></div>
+  <div class="qa"><button class="q" aria-expanded="false">How do I book?</button><div class="a"><p>Call or text 204-972-0325, or email guttergeniewpg@gmail.com.</p></div></div>
+</section>
+
 <section class="areas wrap">
   <h2>Where we work</h2>
   <p>Winnipeg and surrounding communities including Steinbach, Grunthal, Selkirk, Stonewall and everywhere in between. Not sure if we cover you? Just ask.</p>
@@ -110,8 +196,79 @@ footer{border-top:1px solid var(--border);padding:24px 0;text-align:center;color
   <p>or email <a href="mailto:guttergeniewpg@gmail.com" style="color:var(--green)">guttergeniewpg@gmail.com</a></p>
 </section>
 
+</main>
+
 <footer>
   <div class="wrap">© 2026 Gutter Genie · Winnipeg, MB · 204-972-0325</div>
 </footer>
+
+<div id="stickyBar" aria-label="Quick contact">
+  <a href="tel:+12049720325">Call now</a>
+  <a class="ghost" href="sms:+12049720325">Text us</a>
+</div>
+
+<script>
+// Instant estimator: mirrors the ProQuote rate card exactly
+// ($1.75/ft, $100 base fee, $15/downspout, $8.50/ft guards, 1.5x/2.1x storeys,
+// 1x/1.3x/1.65x debris, $45 Steinbach / $55 Grunthal travel, no tax, 30% deposit).
+(function(){
+  var R = { perFoot:1.75, storey2:1.5, storey3:2.1, condModerate:1.3, condHeavy:1.65,
+            minimum:100, downspout:15, guardPerFoot:8.5, travelSteinbach:45, travelGrunthal:55 };
+  function num(id, max){
+    var v = parseFloat(document.getElementById(id).value);
+    if(!isFinite(v) || v < 0) v = 0;
+    return Math.min(v, max);
+  }
+  function money(n){ return '$' + n.toFixed(2); }
+  function estimate(){
+    var feet = num('estFeet', 10000);
+    var storeys = parseInt(document.getElementById('estStoreys').value, 10) || 1;
+    var cond = document.getElementById('estCond').value;
+    var ds = Math.floor(num('estDs', 50));
+    var gf = num('estGuards', 10000);
+    var zone = document.getElementById('estZone').value;
+    var sm = storeys === 3 ? R.storey3 : storeys === 2 ? R.storey2 : 1;
+    var cm = cond === 'heavy' ? R.condHeavy : cond === 'moderate' ? R.condModerate : 1;
+    var lines = [];
+    if(feet > 0) lines.push({ label:'Gutter cleaning (' + feet + ' ft' + (sm !== 1 ? ', ' + storeys + ' storeys' : '') + (cm !== 1 ? ', ' + cond : '') + ')', amount:feet * R.perFoot * sm * cm });
+    if(ds > 0) lines.push({ label:'Downspout flush (' + ds + ')', amount:ds * R.downspout });
+    if(gf > 0) lines.push({ label:'Guard install (' + gf + ' ft)', amount:gf * R.guardPerFoot });
+    var work = lines.reduce(function(s, l){ return s + l.amount; }, 0);
+    if(work > 0 && work < R.minimum){ lines.push({ label:'Minimum charge adjustment', amount:R.minimum - work }); work = R.minimum; }
+    var travel = zone === 'Steinbach' ? R.travelSteinbach : zone === 'Grunthal' ? R.travelGrunthal : 0;
+    if(travel > 0) lines.push({ label:'Travel (' + zone + ')', amount:travel });
+    var total = work + travel;
+    var deposit = Math.round(total * 0.3 * 100) / 100;
+    var html = lines.length
+      ? lines.map(function(l){ return '<div class="est-line"><span>' + l.label + '</span><span>' + money(l.amount) + '</span></div>'; }).join('')
+      : '<div class="est-line"><span>Enter your measurements above</span><span></span></div>';
+    document.getElementById('estLines').innerHTML = html;
+    document.getElementById('estTotal').textContent = money(total);
+    document.getElementById('estTerms').textContent = 'No tax. 30% deposit (' + money(deposit) + ') to book, balance on completion.';
+    var parts = [];
+    if(feet > 0) parts.push(feet + ' ft cleaning');
+    if(ds > 0) parts.push(ds + ' downspouts');
+    if(gf > 0) parts.push(gf + ' ft guards');
+    var msg = 'Hi Jay, I used the Gutter Genie estimator' + (parts.length ? ' (' + parts.join(', ') + (zone !== 'Winnipeg' && zone !== 'Other' ? ', ' + zone : '') + ')' : '') +
+      ': about ' + money(total) + ' with no tax. Can I get an exact quote?';
+    document.getElementById('estSms').href = 'sms:+12049720325?body=' + encodeURIComponent(msg);
+  }
+  ['estFeet','estStoreys','estCond','estDs','estGuards','estZone'].forEach(function(id){
+    document.getElementById(id).addEventListener('input', estimate);
+    document.getElementById(id).addEventListener('change', estimate);
+  });
+  estimate();
+
+  // FAQ accordion
+  document.querySelectorAll('.qa .q').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      var open = btn.getAttribute('aria-expanded') === 'true';
+      btn.setAttribute('aria-expanded', String(!open));
+      var a = btn.nextElementSibling;
+      a.style.maxHeight = open ? '0' : a.scrollHeight + 'px';
+    });
+  });
+})();
+</script>
 </body>
 </html>

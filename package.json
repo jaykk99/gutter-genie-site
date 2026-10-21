@@ -1,0 +1,1 @@
+{"description":"Gutter Genie marketing site (static, GitHub Pages).","name":"gutter-genie-site","private":true,"scripts":{"test":"node test/check.js"},"type":"module","version":"1.1.0"}
