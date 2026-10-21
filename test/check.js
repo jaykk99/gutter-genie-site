@@ -42,7 +42,8 @@ for (const [label, re] of [
 ]) check(label, re.test(script));
 
 // --- house rules ---
-check('no em dashes anywhere', !html.includes('—'), 'found an em dash');
+const EM_DASH = '\u2014'; // U+2014 written as an escape so this file holds no literal em dash
+check('no em dashes anywhere', !html.includes(EM_DASH), 'found an em dash');
 check('no em dash entity either', !html.includes('&mdash;'));
 
 // --- JSON-LD ---
