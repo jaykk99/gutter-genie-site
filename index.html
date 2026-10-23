@@ -26,7 +26,7 @@
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Gutter Genie: Gutter Cleaning & Repair in Winnipeg">
 <meta name="twitter:description" content="Professional gutter cleaning, downspout clearing, guard installation and repairs. Free inspections. Call or text 204-972-0325.">
-<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🧞</text></svg>">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%234ade80'/%3E%3Ctext x='32' y='45' font-family='Arial Black,Arial' font-size='38' font-weight='900' fill='%23062b14' text-anchor='middle'%3EG%3C/text%3E%3C/svg%3E">
 <style>
 :root{--bg:#0b1510;--panel:#10241a;--border:#1e4433;--green:#4ade80;--text:#eef7f1;--muted:#a8c9b6;--amber:#fbbf24}
 *{margin:0;padding:0;box-sizing:border-box;font-family:'Segoe UI',system-ui,-apple-system,sans-serif}
@@ -95,17 +95,31 @@ a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible{ou
 .contact p{color:var(--muted)}
 footer{border-top:1px solid var(--border);padding:24px 0;text-align:center;color:var(--muted);font-size:.85rem}
 @media(max-width:600px){.hero h1{font-size:2rem}.contact .phone{font-size:1.7rem}}
+.logo-badge{display:inline-flex;align-items:center;justify-content:center;width:34px;height:34px;border-radius:9px;background:var(--green);color:#062b14;font-weight:900;margin-right:10px;font-size:20px;vertical-align:middle}
+.hero-band{position:relative;overflow:hidden}
+.hero-photo{position:absolute;inset:0;background:url("https://images.pexels.com/photos/35153375/pexels-photo-35153375.jpeg?auto=compress&cs=tinysrgb&w=1600") center/cover no-repeat}
+.hero-photo::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(8,12,10,.80),rgba(8,12,10,.72) 55%,rgba(8,12,10,.97))}
+.hero-band .hero{position:relative;z-index:1;padding:110px 0 80px}
+.hero-band .hero p,.hero-band .badges{color:#dfe6e1}
+.dash{display:inline-block;width:10px;height:2px;background:var(--green);vertical-align:middle;margin-right:8px}
+.card.has-photo{padding:0;overflow:hidden}
+.card.has-photo .card-img{width:100%;height:160px;object-fit:cover;display:block;border-bottom:1px solid var(--border)}
+.card.has-photo h3,.card.has-photo p{padding:0 22px}
+.card.has-photo h3{margin-top:18px}
+.card.has-photo p{padding-bottom:22px}
+.photo-credit{font-size:12px;opacity:.6;margin-top:6px}
+@media(max-width:480px){.logo{white-space:nowrap;font-size:20px}.logo-badge{width:30px;height:30px;font-size:17px;margin-right:8px}.call-btn{white-space:nowrap;padding:10px 14px;font-size:14px}}
 </style>
 </head>
 <body>
 <a class="skip" href="#estimate">Skip to instant estimate</a>
 <header class="wrap">
-  <div class="logo">🧞 Gutter <span>Genie</span></div>
+  <div class="logo"><span class="logo-badge" aria-hidden="true">G</span>Gutter <span>Genie</span></div>
   <a class="call-btn" href="tel:+12049720325">Call 204-972-0325</a>
 </header>
 <main>
 
-<section class="hero wrap">
+<section class="hero-band"><div class="hero-photo" aria-hidden="true"></div><div class="hero wrap">
   <h1>Your gutters, <em>handled.</em></h1>
   <p>Professional gutter cleaning, downspout clearing, guard installation and repairs across Winnipeg and surrounding areas. Free inspections, no obligation.</p>
   <div class="cta-row">
@@ -114,22 +128,23 @@ footer{border-top:1px solid var(--border);padding:24px 0;text-align:center;color
     <a class="cta ghost" href="mailto:guttergeniewpg@gmail.com">Email for a Quote</a>
   </div>
   <div class="badges">
-    <span>✓ Free inspections</span>
-    <span>✓ Upfront pricing</span>
-    <span>✓ Winnipeg & area</span>
+    <span><i class="dash" aria-hidden="true"></i>Free inspections</span>
+    <span><i class="dash" aria-hidden="true"></i>Upfront pricing</span>
+    <span><i class="dash" aria-hidden="true"></i>Winnipeg & area</span>
   </div>
+</div>
 </section>
 
 <section class="services wrap">
   <h2>What we do</h2>
   <p class="sub">One call covers the whole gutter system.</p>
   <div class="grid">
-    <div class="card"><h3>Gutter Cleaning</h3><p>Full cleanout of leaves, debris and buildup so water flows freely again.</p></div>
-    <div class="card"><h3>Downspout Clearing</h3><p>Unclog and flush downspouts, the #1 cause of overflow.</p></div>
-    <div class="card"><h3>Guard Installation</h3><p>Quality gutter guards fitted to keep debris out for good.</p></div>
-    <div class="card"><h3>Hanger & Clip Repair</h3><p>Re-secure sagging or disconnected sections, replace broken hangers.</p></div>
-    <div class="card"><h3>Gutter Replacement</h3><p>Full replacement for systems past saving, measured and fitted right.</p></div>
-    <div class="card"><h3>Free Inspections</h3><p>We look, we quote, you decide. Weekdays at 12:30.</p></div>
+    <div class="card has-photo"><img class="card-img" src="https://images.pexels.com/photos/13307118/pexels-photo-13307118.jpeg?auto=compress&cs=tinysrgb&w=700" alt="Clean gutter with water flowing freely" loading="lazy" decoding="async" width="700" height="467"><h3>Gutter Cleaning</h3><p>Full cleanout of leaves, debris and buildup so water flows freely again.</p></div>
+    <div class="card has-photo"><img class="card-img" src="https://images.pexels.com/photos/20113440/pexels-photo-20113440.jpeg?auto=compress&cs=tinysrgb&w=700" alt="Rainwater running through a house gutter" loading="lazy" decoding="async" width="700" height="467"><h3>Downspout Clearing</h3><p>Unclog and flush downspouts, the #1 cause of overflow.</p></div>
+    <div class="card has-photo"><img class="card-img" src="https://images.pexels.com/photos/7788264/pexels-photo-7788264.jpeg?auto=compress&cs=tinysrgb&w=700" alt="Worker in safety gear on a house roof" loading="lazy" decoding="async" width="700" height="467"><h3>Guard Installation</h3><p>Quality gutter guards fitted to keep debris out for good.</p></div>
+    <div class="card has-photo"><img class="card-img" src="https://images.pexels.com/photos/35382726/pexels-photo-35382726.jpeg?auto=compress&cs=tinysrgb&w=700" alt="Icicle hanging from a metal gutter in winter" loading="lazy" decoding="async" width="700" height="467"><h3>Hanger & Clip Repair</h3><p>Re-secure sagging or disconnected sections, replace broken hangers.</p></div>
+    <div class="card has-photo"><img class="card-img" src="https://images.pexels.com/photos/38524253/pexels-photo-38524253.jpeg?auto=compress&cs=tinysrgb&w=700" alt="Roofer working on a house roof" loading="lazy" decoding="async" width="700" height="467"><h3>Gutter Replacement</h3><p>Full replacement for systems past saving, measured and fitted right.</p></div>
+    <div class="card has-photo"><img class="card-img" src="https://images.pexels.com/photos/12686600/pexels-photo-12686600.jpeg?auto=compress&cs=tinysrgb&w=700" alt="House roofline and eaves" loading="lazy" decoding="async" width="700" height="467"><h3>Free Inspections</h3><p>We look, we quote, you decide. Weekdays at 12:30.</p></div>
   </div>
 </section>
 
@@ -199,7 +214,7 @@ footer{border-top:1px solid var(--border);padding:24px 0;text-align:center;color
 </main>
 
 <footer>
-  <div class="wrap">© 2026 Gutter Genie · Winnipeg, MB · 204-972-0325</div>
+  <div class="wrap">© 2026 Gutter Genie · Winnipeg, MB · 204-972-0325<div class="photo-credit">Stock photos via Pexels</div></div>
 </footer>
 
 <div id="stickyBar" aria-label="Quick contact">
