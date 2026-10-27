@@ -1,6 +1,8 @@
 # Gutter Genie — customer landing page
 
-Live: **https://jaykk99.github.io/gutter-genie-site/**
+Live: **https://guttergenie.pages.dev**
+
+Mirror: https://jaykk99.github.io/gutter-genie-site/
 
 Single-file static landing page for **Gutter Genie** (gutter cleaning & repair, Winnipeg MB).
 
