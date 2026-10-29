@@ -1,0 +1,10 @@
+# Cloudflare Pages config — Gutter Genie site.
+# This project ALREADY deploys to Cloudflare Pages as "guttergenie"
+# (live: https://guttergenie.pages.dev) via the dashboard Git connection.
+# This file only pins those settings in the repo. It changes no URL and
+# no content. index.html at the repo root IS the site (the restored
+# charcoal/red UI; ui/index.html is its identical source-of-truth copy —
+# do not overwrite either).
+name = "guttergenie"
+pages_build_output_dir = "."
+compatibility_date = "2026-10-29"
