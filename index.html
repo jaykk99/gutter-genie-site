@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>GutterGenie | Manitoba Gutter Cleaning &amp; Repair - Free Quotes</title>
-<meta name="description" content="GutterGenie keeps the flow going for homes across Winnipeg, Steinbach, Grunthal and beyond. Call or text 204-972-0325 for a free quote.">
+<meta name="description" content="GutterGenie keeps the flow going for homes across Winnipeg, Steinbach, Grunthal and beyond. Gutter cleaning and repair, Christmas light hanging and roof snow removal. Call or text 204-972-0325 for a free quote.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
@@ -285,6 +285,70 @@
   }
   .service-card p{color:var(--steel);font-size:0.92rem;}
 
+  .seasonal{background:var(--void);}
+  .price-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:24px;
+  }
+  .price-card{
+    background:var(--panel-raised);
+    border:1px solid var(--panel-line);
+    border-top:3px solid var(--red-brand);
+    border-radius:6px;
+    padding:30px 26px 26px;
+    display:flex;
+    flex-direction:column;
+  }
+  .price-card .service-icon{margin-bottom:14px;}
+  .price-card h3{font-size:1.35rem;color:var(--offwhite);margin-bottom:6px;}
+  .price-card .season{
+    font-family:'JetBrains Mono',monospace;
+    font-size:0.74rem;
+    letter-spacing:0.08em;
+    text-transform:uppercase;
+    color:var(--red-bright);
+    margin-bottom:14px;
+  }
+  .price-card > p{color:var(--steel);font-size:0.92rem;margin-bottom:18px;}
+  .price-list{list-style:none;margin-bottom:18px;}
+  .price-list li{
+    display:flex;
+    justify-content:space-between;
+    align-items:baseline;
+    gap:14px;
+    padding:11px 0;
+    border-bottom:1px dashed var(--panel-line);
+    font-size:0.93rem;
+    color:var(--offwhite);
+  }
+  .price-list li:last-child{border-bottom:none;}
+  .price-list li small{display:block;color:var(--steel-dim);font-size:0.8rem;margin-top:2px;}
+  .price-list .amt{
+    font-family:'JetBrains Mono',monospace;
+    font-weight:600;
+    color:var(--red-bright);
+    white-space:nowrap;
+    text-align:right;
+  }
+  .price-includes{
+    font-size:0.85rem;
+    color:var(--steel);
+    background:var(--panel);
+    border:1px solid var(--panel-line);
+    border-radius:4px;
+    padding:12px 14px;
+    margin-bottom:20px;
+  }
+  .price-includes b{color:var(--offwhite);font-weight:600;}
+  .price-card .btn{margin-top:auto;width:100%;}
+  .price-fine{
+    text-align:center;
+    color:var(--steel-dim);
+    font-size:0.84rem;
+    margin-top:26px;
+  }
+
   .area{
     position:relative;
   }
@@ -401,7 +465,7 @@
   }
   .footer-grid{
     display:grid;
-    grid-template-columns:1.4fr 1fr 1fr;
+    grid-template-columns:1.4fr 1fr 1fr 1fr;
     gap:36px;
     margin-bottom:40px;
   }
@@ -533,6 +597,64 @@
     <path d="M0,0 L1200,0 L1200,10 C1100,10 1080,26 1000,26 L200,26 C120,26 100,10 0,10 Z"></path>
   </svg>
 
+  <section class="seasonal" id="seasonal">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow">Winter &amp; Holiday Services</p>
+        <h2>Lights up. Snow off.</h2>
+        <p>Same crew, same ladders, same care for your eavestroughs. Upfront pricing below, and every job gets a free quote before we start.</p>
+      </div>
+      <div class="price-grid">
+        <div class="price-card">
+          <svg class="service-icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true">
+            <path d="M4 14 Q24 24 44 14" stroke-linecap="round"></path>
+            <path d="M12 18.5 L12 22"></path><circle cx="12" cy="26" r="3.6"></circle>
+            <path d="M24 20.5 L24 24"></path><circle cx="24" cy="28" r="3.6"></circle>
+            <path d="M36 18.5 L36 22"></path><circle cx="36" cy="26" r="3.6"></circle>
+          </svg>
+          <h3>Christmas Light Hanging</h3>
+          <p class="season">Booking now &middot; Nov to Jan</p>
+          <p>We hang your rooflines with clips made for eavestroughs (no nails, no staples, no damage), then come back after the holidays to take everything down.</p>
+          <ul class="price-list">
+            <li><span>Your lights, we hang them<small>Minimum $199</small></span><span class="amt">$3 / ft</span></li>
+            <li><span>Our commercial LED C9 lights<small>Minimum $349</small></span><span class="amt">$6 / ft</span></li>
+            <li><span>Wreaths &amp; garland</span><span class="amt">$35 each</span></li>
+            <li><span>Trees &amp; shrubs wrapped<small>Depends on size</small></span><span class="amt">from $50</span></li>
+            <li><span>Two-storey rooflines</span><span class="amt">+25%</span></li>
+            <li><span>Takedown only<small>Lights someone else put up</small></span><span class="amt">$1 / ft</span></li>
+          </ul>
+          <div class="price-includes"><b>Included:</b> clips, timer setup, a bulb check before we go up, and January takedown.</div>
+          <a href="sms:+12049720325?body=Hi%2C%20I%27d%20like%20a%20quote%20for%20Christmas%20light%20hanging." class="btn btn-primary">Text to Book Lights</a>
+        </div>
+
+        <div class="price-card">
+          <svg class="service-icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true">
+            <path d="M6 26 L24 10 L42 26" stroke-linecap="round" stroke-linejoin="round"></path>
+            <path d="M10 22.5 Q24 12 38 22.5" stroke-linecap="round" stroke-dasharray="2 3"></path>
+            <path d="M10 26 L10 40 L38 40 L38 26" stroke-linejoin="round"></path>
+            <path d="M24 30 L24 38 M20.5 32 L27.5 36 M27.5 32 L20.5 36" stroke-linecap="round"></path>
+          </svg>
+          <h3>Roof Snow Removal</h3>
+          <p class="season">All winter &middot; Dec to Mar</p>
+          <p>Heavy snow loads stress your roof and feed ice dams that tear eavestroughs off the fascia. We shovel it off by hand with tools that won't scrape your shingles.</p>
+          <ul class="price-list">
+            <li><span>Hourly rate<small>One-hour minimum</small></span><span class="amt">$75 to $100 / hr</span></li>
+            <li><span>Typical bungalow<small>Flat rate, roof cleared</small></span><span class="amt">$150 to $350</span></li>
+            <li><span>Steep or hard-to-reach roofs</span><span class="amt">$100 / hr</span></li>
+            <li><span>Ice dam removal<small>Priced after we see it</small></span><span class="amt">Quoted on site</span></li>
+          </ul>
+          <div class="price-includes"><b>Included:</b> eaves and valleys cleared, downspouts checked for ice, and snow moved off walkways we drop it on.</div>
+          <a href="sms:+12049720325?body=Hi%2C%20I%27d%20like%20a%20quote%20for%20roof%20snow%20removal." class="btn btn-primary">Text for Snow Removal</a>
+        </div>
+      </div>
+      <p class="price-fine">Prices in CAD. No tax charged. 30% deposit to book, balance on completion. Travel outside Winnipeg may add a small fee.</p>
+    </div>
+  </section>
+
+  <svg class="gutter-divider" viewBox="0 0 1200 26" preserveAspectRatio="none" aria-hidden="true">
+    <path d="M0,0 L1200,0 L1200,10 C1100,10 1080,26 1000,26 L200,26 C120,26 100,10 0,10 Z"></path>
+  </svg>
+
   <section class="area">
     <div class="wrap area-grid">
       <div>
@@ -621,6 +743,15 @@
           <li><a href="sms:+12049720325">Text for a quote</a></li>
           <li><a href="mailto:guttergeniewpg@gmail.com">guttergeniewpg@gmail.com</a></li>
           <li>Manitoba, Canada</li>
+        </ul>
+      </div>
+      <div>
+        <h4>Services</h4>
+        <ul>
+          <li>Gutter cleaning &amp; repair</li>
+          <li>Downspouts &amp; installs</li>
+          <li><a href="#seasonal">Christmas light hanging</a></li>
+          <li><a href="#seasonal">Roof snow removal</a></li>
         </ul>
       </div>
       <div>

@@ -3,8 +3,8 @@
 // Tests the RESTORED Aug 2026 charcoal/red UI (index.html at repo root),
 // which Jay restored on 2026-10-27. That design has no estimator, no FAQ
 // accordion and no JSON-LD, so this suite checks what the live page actually
-// promises: contact links, branding/theme, page structure, and the
-// no-em-dash rule. Do not re-add estimator/JSON-LD checks unless the page
+// promises: contact links, branding/theme, page structure, the seasonal
+// price cards (Christmas lights + roof snow removal), and the no-em-dash rule. Do not re-add estimator/JSON-LD checks unless the page
 // gets those features back.
 import { readFileSync, existsSync } from 'node:fs';
 import { dirname, join } from 'node:path';
@@ -41,6 +41,14 @@ check('service area section present', html.includes('<section class="area"'));
 check('footer present', html.includes('<footer>'));
 check('service areas list Winnipeg / Steinbach / Grunthal',
   html.includes('Winnipeg') && html.includes('Steinbach') && html.includes('Grunthal'));
+
+// --- winter & holiday services (added Nov 2026) ---
+check('seasonal section present', html.includes('<section class="seasonal" id="seasonal"'));
+check('Christmas light hanging listed', html.includes('Christmas Light Hanging'));
+check('roof snow removal listed', html.includes('Roof Snow Removal'));
+check('lights pricing shown', html.includes('$3 / ft') && html.includes('$6 / ft'));
+check('snow pricing shown', html.includes('$75 to $100 / hr') && html.includes('$150 to $350'));
+check('seasonal sms CTAs use +1 format', (html.match(/href="sms:\+12049720325\?body=/g) || []).length === 2);
 
 // --- charcoal/red theme (the restored design) ---
 check('charcoal background color', html.includes('#0A0B0D'));
