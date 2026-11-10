@@ -285,6 +285,53 @@
   }
   .service-card p{color:var(--steel);font-size:0.92rem;}
 
+
+  .gallery-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(210px,1fr));
+    gap:24px;
+  }
+  .gallery-card{
+    background:var(--panel-raised);
+    border:1px solid var(--panel-line);
+    border-top:3px solid var(--red-brand);
+    border-radius:6px;
+    overflow:hidden;
+    display:flex;
+    flex-direction:column;
+  }
+  .gallery-card img{
+    width:100%;
+    height:auto;
+    aspect-ratio:4/5;
+    object-fit:cover;
+  }
+  .gallery-card figcaption{
+    padding:16px 18px 18px;
+    color:var(--steel);
+    font-size:0.9rem;
+  }
+  .gallery-card figcaption b{
+    display:block;
+    color:var(--offwhite);
+    font-family:'Oswald',sans-serif;
+    text-transform:uppercase;
+    letter-spacing:0.02em;
+    font-size:0.95rem;
+    margin-bottom:6px;
+  }
+  .gallery-cta{
+    text-align:center;
+    margin-top:34px;
+    color:var(--steel);
+    font-size:1rem;
+  }
+  .gallery-cta a{
+    color:var(--red-bright);
+    font-weight:600;
+    white-space:nowrap;
+  }
+
   .seasonal{background:var(--void);}
   .price-grid{
     display:grid;
@@ -589,7 +636,65 @@
           <h3>Downspout Service</h3>
           <p>Clearing, redirecting and repairing downspouts to protect your foundation.</p>
         </div>
+        <div class="service-card">
+          <svg class="service-icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true">
+            <path d="M6 8 Q24 20 42 8" stroke-linecap="round"></path>
+            <path d="M14 12 L14 17" stroke-linecap="round"></path>
+            <circle cx="14" cy="21" r="3.5"></circle>
+            <path d="M24 14 L24 19" stroke-linecap="round"></path>
+            <circle cx="24" cy="23" r="3.5"></circle>
+            <path d="M34 12 L34 17" stroke-linecap="round"></path>
+            <circle cx="34" cy="21" r="3.5"></circle>
+            <path d="M10 34 Q24 42 38 34" stroke-linecap="round"></path>
+          </svg>
+          <h3>Christmas Light Hanging</h3>
+          <p>Your lights hung straight and secure along the roofline and eaves, so you stay off the ladder. See the seasonal pricing below, or text 204-972-0325 to book.</p>
+        </div>
+        <div class="service-card">
+          <svg class="service-icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true">
+            <path d="M6 18 L24 6 L42 18" stroke-linecap="round" stroke-linejoin="round"></path>
+            <path d="M24 26 L24 42" stroke-linecap="round"></path>
+            <path d="M17 30 L31 38" stroke-linecap="round"></path>
+            <path d="M31 30 L17 38" stroke-linecap="round"></path>
+          </svg>
+          <h3>Roof Snow Removal</h3>
+          <p>Heavy snow shovelled off your roof by hand before the weight and ice dams do damage. See the seasonal pricing below, or text 204-972-0325 to book.</p>
+        </div>
       </div>
+    </div>
+  </section>
+
+
+  <section class="gallery" id="before-after">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow">Real Jobs, Real Results</p>
+        <h2>Before and after</h2>
+        <p>Actual GutterGenie cleanouts. Packed, overflowing gutters on the left, clean and flowing on the right.</p>
+      </div>
+      <div class="gallery-grid">
+        <figure class="gallery-card">
+          <img src="images/before-after-weeds.jpg" alt="Before and after photo of a gutter packed with leaves and weeds, then cleaned out" width="1080" height="1350" loading="lazy">
+          <figcaption><b>Weeds growing out of the gutter</b>Packed with leaves and weeds growing right out of it. Cleaned out and flowing again.</figcaption>
+        </figure>
+        <figure class="gallery-card">
+          <img src="images/before-after-pinecones.jpg" alt="Before and after photo of a gutter packed with pine cones and needles, then rinsed clean" width="1080" height="1350" loading="lazy">
+          <figcaption><b>Pine cones packed solid</b>Pine cones and needles packed solid in this one. Cleared out and rinsed clean.</figcaption>
+        </figure>
+        <figure class="gallery-card">
+          <img src="images/before-after-steinbach.jpg" alt="Before and after photo of a gutter cleaning job in Steinbach, packed with leaves and muck, then cleaned out" width="1080" height="1350" loading="lazy">
+          <figcaption><b>Steinbach cleanout</b>Packed full of leaves and muck. Cleaned out, outlet cleared, water moving again.</figcaption>
+        </figure>
+        <figure class="gallery-card">
+          <img src="images/before-after-full-run.jpg" alt="Before and after photo of plants growing along a full gutter run, then cleaned and draining" width="1080" height="1350" loading="lazy">
+          <figcaption><b>Plants along the whole run</b>Plants were growing along this whole gutter run. Now it is clean and draining the way it should.</figcaption>
+        </figure>
+        <figure class="gallery-card">
+          <img src="images/before-after-leaves.jpg" alt="Before and after photo of a gutter packed with dry leaves, then clean and flowing" width="1080" height="1350" loading="lazy">
+          <figcaption><b>Dry leaves, cleared out</b>Packed with dry leaves on one side, clean and flowing on the other.</figcaption>
+        </figure>
+      </div>
+      <p class="gallery-cta">Want yours looking like the after photos? Call or text <a href="tel:+12049720325">204-972-0325</a> for a free quote.</p>
     </div>
   </section>
 
